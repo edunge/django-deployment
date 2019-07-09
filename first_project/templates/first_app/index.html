@@ -2,13 +2,20 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title>School Picture</title>
+        <title>Home</title>
         <link rel="stylesheet" href=" {% static "css/mystyle.css" %} ">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-        <h1>Picture of a school</h1>
-        <h2>Welcome to django level two</h2>
-        <h3>Here are you access record:</h3>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Picture of a school</h1>
+                <h2>Welcome to django level two</h2>
+                <h3>Here are you access record:</h3>
+            </div>
+        </div>
+        
 
         <div class="djangotwo">
              {% if access_records %}
